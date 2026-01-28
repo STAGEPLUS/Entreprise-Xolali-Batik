@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez notre collection de pagnes batik : Vêtements, Décoration, Accessoires.">
+    <title>Nos Produits - Les créations Xolali</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="assets/image/xolalis-logo.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="assets/image/xolalis-logo.jpg" alt="Les Créations Xolali">
+            </a>
+            <button class="nav-toggle" aria-label="Ouvrir le menu"><span class="hamburger"></span></button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">À Propos</a></li>
+                    <li class="nav__item"><a href="products.html" class="nav__link active">Nos Produits</a></li>
+                    <li class="nav__item"><a href="formations.html" class="nav__link">Formations</a></li>
+                    <li class="nav__item"><a href="gallery.html" class="nav__link">Galerie</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <a href="inscription.html" class="btn btn--cta nav__cta">Rejoignez-nous</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Nos Collections</h1>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Tout</button>
+                    <button class="filter-btn" data-filter="pagnes">Pagnes</button>
+                    <button class="filter-btn" data-filter="pantalons">Pantalons</button>
+                    <button class="filter-btn" data-filter="robes">Robes</button>
+                    <button class="filter-btn" data-filter="tshirts">T-shirts</button>
+                    <button class="filter-btn" data-filter="sacs">Sacs</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid grid--3" id="product-grid">
+                    <!-- Product 2 : Pantalon -->
+                    <div class="product-card reveal reveal-delay-1" data-category="pantalons">
+                        <span class="product-badge">Best-Seller</span>
+                        <div class="product-img">
+                            <img src="assets/image/product-pantalon.jpg" alt="Pantalon Batik"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pantalon</h3>
+                            <p class="product-category">Mode Homme/Femme</p>
+                            <p class="product-price">10 000 FCFA</p>
+                            <div class="product-actions">
+                                <a href="contact.html?subject=Reservation%20Pantalon%20Batik"
+                                    class="btn btn--reserve">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 : Sac -->
+                    <div class="product-card reveal reveal-delay-2" data-category="sacs">
+                        <span class="product-badge">Édition Limitée</span>
+                        <div class="product-img">
+                            <img src="assets/image/product-sac.jpg" alt="Sac Batik"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sac à main Tote</h3>
+                            <p class="product-category">Accessoires</p>
+                            <p class="product-price">10 000 FCFA</p>
+                            <div class="product-actions">
+                                <a href="contact.html?subject=Reservation%20Sac%20Tote"
+                                    class="btn btn--reserve">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 : Robe -->
+                    <div class="product-card reveal" data-category="robes">
+                        <span class="product-badge">Coup de coeur</span>
+                        <div class="product-img">
+                            <img src="assets/image/product-robe.jpg" alt="Robe Batik"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Robe Longue Indigo</h3>
+                            <p class="product-category">Mode Femme</p>
+                            <p class="product-price">Sur Demande</p>
+                            <div class="product-actions">
+                                <a href="contact.html?subject=Reservation%20Robe%20Indigo"
+                                    class="btn btn--reserve">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 : T-shirt -->
+                    <div class="product-card reveal reveal-delay-1" data-category="tshirts">
+                        <div class="product-img">
+                            <img src="assets/image/product-tshirt.jpg" alt="T-shirt Batik"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">T-shirt Motif Atypique</h3>
+                            <p class="product-category">T-shirts</p>
+                            <p class="product-price">7 000 FCFA</p>
+                            <div class="product-actions">
+                                <a href="contact.html?subject=Reservation%20T-shirt%20Batik"
+                                    class="btn btn--reserve">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 : Autre Pagne -->
+                    <div class="product-card reveal reveal-delay-2" data-category="pagnes">
+                        <span class="product-badge">Prestige</span>
+                        <div class="product-img">
+                            <img src="assets/image/gallery-batik-4.jpg" alt="Pagne Prestige"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pagne Prestige</h3>
+                            <p class="product-category">Pagnes Batik</p>
+                            <p class="product-price">5 000 FCFA</p>
+                            <div class="product-actions">
+                                <a href="contact.html?subject=Reservation%20Pagne%20Prestige"
+                                    class="btn btn--reserve">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <h3 class="footer__logo">Les créations Xolali</h3>
+                <p>Fabrication de pagnes batik et centre de formation.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Liens Rapides</h4>
+                <ul class="footer__links">
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <p></p>
+                <p>Tél: +228 90 66 06 70</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Les créations Xolali. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
